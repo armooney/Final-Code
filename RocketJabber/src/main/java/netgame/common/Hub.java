@@ -78,7 +78,7 @@ public class Hub {
      * If the autoreset property is set to true, then the ObjectOutputStreams that are
      * used for transmitting messages to clients is reset before each object is sent.
      */
-    private volatile boolean autoreset;
+    protected volatile boolean autoreset;
     
     private ServerSocket serverSocket;  // Listens for connections.
     private Thread serverThread;        // Accepts connections on serverSocket
